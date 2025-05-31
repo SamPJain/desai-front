@@ -1,0 +1,46 @@
+.commo-header-img {
+  color: rgb(0, 0, 255);
+}
+
+.textOnImageStyle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 70px;
+  margin-top: 0.8rem;
+}
+
+.contactimage {
+  width: 100%;
+  height: 360px;
+}
+
+@media (max-width: 786px) {
+  .contactimage {
+    height: 280px;
+  }
+
+  .textOnImageStyle {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    /* line-height: 2.3rem; */
+    margin-top: 0.8rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .contactimage {
+    height: 230px;
+  }
+
+  .textOnImageStyle {
+    font-size: 35px;
+    white-space: nowrap;
+    /* line-height: 2rem; */
+    margin-top: 0.8rem;
+  }
+}

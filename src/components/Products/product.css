@@ -1,0 +1,9 @@
+/* Styles for the product images within the flex container */
+.product-div .flex > div img {
+  /* Keep the hover effect */
+  transition: all 0.3s ease-in-out;
+}
+
+.product-div .flex > div img:hover {
+  scale: 1.2;
+}

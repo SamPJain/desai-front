@@ -1,0 +1,55 @@
+.next-pre-box {
+  border-top: 1px solid rgba(196, 194, 194, 0.694);
+  border-bottom: 1px solid rgba(196, 194, 194, 0.696);
+}
+.projects-gallery-box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 2rem;
+  column-gap: 2rem;
+}
+@media (max-width: 767px) {
+  .slider-div {
+    margin: 0.5rem;
+  }
+}
+
+@media (max-width: 1150px) {
+  .projects-gallery-box {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 850px) {
+  .projects-gallery-box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .next-pre-heading {
+    display: block;
+  }
+}
+
+@media (max-width: 500px) {
+  .projects-gallery-box {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .next-pre-heading {
+    display: none;
+  }
+  .project-detail-top-img {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .project-detail-top-detail {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+}
+h3 + p {
+  margin-top: 0.3rem; /* Adjust as needed for a smaller gap */
+}
+p {
+  margin-top: 0.3rem; /* Or your preferred value */
+}
+
+

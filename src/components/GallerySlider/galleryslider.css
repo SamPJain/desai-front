@@ -1,0 +1,34 @@
+.card-test {
+  background-color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.card-test2 {
+  background-color: #f8f8f8;
+  transition: all 0.3s ease;
+}
+
+.card-test:hover,
+.card-test2:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-box .slick-dots li button:before {
+  color: #16a34a;
+}
+
+.testimonial-box .slick-dots li.slick-active button:before {
+  color: #16a34a;
+}
+
+@media (max-width: 768px) {
+  .testimonial-box {
+    padding: 0;
+  }
+  
+  .card-test,
+  .card-test2 {
+    padding: 1rem;
+  }
+}

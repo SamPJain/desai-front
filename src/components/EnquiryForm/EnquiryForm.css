@@ -1,0 +1,155 @@
+.identity {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 8px;
+  height: 150px;
+  cursor: pointer;
+  margin: 10px; /* Adjust margin for better spacing */
+}
+
+.contact {
+  padding-bottom: 30px;
+  margin-left: -50%;
+}
+
+.contact p {
+  margin-top: 5%; /* Adjust margin for better spacing */
+  font-size: 15px;
+  color: rgb(172, 159, 159);
+}
+
+/* .contact h1 {
+  margin-top: -10%; 
+  font-size: 21px;
+  font-weight: 500;
+} */
+
+.submitButton {
+  background-color: #4caf50; /* Green background color */
+  color: white; /* White text color */
+  padding: 10px 20px; /* Padding for top/bottom and left/right */
+  font-size: 16px; /* Font size */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Cursor style */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+  margin-top: 10px;
+}
+
+  /* Hover effect */
+  .submitButton:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+
+  /* Focus effect */
+  .submitButton:focus {
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 0 5px rgba(0, 128, 0, 0.7); /* Light green shadow on focus */
+  }
+
+  /* Active/Clicked effect */
+  .submitButton:active {
+    background-color: #4caf50; /* Restore original color on click */
+  }
+
+
+@media (max-width: 768px) {
+  .contact {
+    padding-bottom: 30px;
+    margin-left: -55%;
+  }
+
+  .main-box {
+ 
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .idenity {
+    width: 90%; /* Adjust width for better responsiveness */
+    margin: 10px auto; /* Center and provide spacing */
+  }
+
+  .contact {
+    width: 100%; /* Adjust width for better responsiveness */
+    margin-left: 0; /* Remove left margin */
+  }
+
+  .final-img {
+    height: 430px;
+    width: 400px;
+  }
+
+  .last-imgDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 540px) {
+  .contact {
+    padding-bottom: 30px;
+    margin-left: -50%;
+  }
+
+  .main-box {
+  
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .contact p {
+    margin-top: 5%; /* Adjust margin for better spacing */
+    font-size: 13px;
+    color: rgb(172, 159, 159);
+  }
+
+  .contact h1 {
+    margin-top: -10%; /* Adjust margin for better spacing */
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .last-imgDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .final-img {
+    height: 340px;
+    width: 380px;
+  }
+}
+
+@media (max-width: 420px) {
+  .last-imgDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .final-img {
+    height: 300px;
+    width: 280px;
+  }
+}
+
+/* Add at the bottom of the file */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+  }
+  70% {
+    transform: scale(1.1);
+    box-shadow: 0 0 0 10px rgba(37, 211, 102, 0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
+
+.fixed {
+  animation: pulse 2s infinite;
+}
+

@@ -1,0 +1,110 @@
+.gallery-container {
+  width: 95%;
+  min-height: 100vh;
+  position: relative;
+  margin: 0 auto;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.gallery-container .media-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  margin: 20px auto;
+}
+
+.gallery-container .media-container .media {
+  height: 300px;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.gallery-container .media-container .media video,
+.gallery-container .media-container .media img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: all 0.3s linear;
+}
+
+.gallery-container .media-container .media:hover video,
+.gallery-container .media-container .media:hover img {
+  transform: scale(1.1);
+}
+
+.gallery-container .popup-media {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+}
+
+.gallery-container .popup-media video,
+.gallery-container .popup-media img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  max-width: 90%;
+  aspect-ratio: 21/9;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.gallery-closeBtn {
+  position: absolute;
+  color: white;
+  top: 5px;
+  right: 20px;
+  font-size: 40px;
+  font-weight: bolder;
+  z-index: 100;
+  cursor: pointer;
+  user-select: none;
+}
+
+.gallery-leftBtn {
+  position: absolute;
+  color: white;
+  top: 45%;
+  left: 20px;
+  font-size: 40px;
+  font-weight: bolder;
+  z-index: 100;
+  cursor: pointer;
+  user-select: none;
+}
+.gallery-rightBtn {
+  position: absolute;
+  color: white;
+  top: 45%;
+  right: 20px;
+  font-size: 40px;
+  font-weight: bolder;
+  z-index: 100;
+  cursor: pointer;
+  user-select: none;
+}
+
+@media (max-width: 420px) {
+  .gallery-container .popup-media video,
+  .gallery-container .popup-media img {
+    aspect-ratio: 4/3;
+  }
+
+  .gallery-leftBtn {
+    color: rgb(70, 69, 69);
+  }
+  .gallery-rightBtn {
+    color: rgb(70, 69, 69);
+  }
+}

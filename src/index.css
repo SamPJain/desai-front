@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+  1. IMPORT THE FONT FROM GOOGLE FONTS
+  (You'll also need to add the <link> tags in your public/index.html)
+  The @import here is redundant if linked in HTML, but harmless.
+  The critical part for Roboto/Open Sans is the <link> tag in index.html
+*/
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;700&display=swap');
+/* If you want to use @import for Roboto/Open Sans here, you'd add them as well:
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+*/
+
+body {
+  margin: 0;
+  padding: 0;
+  /* 2. APPLY THE NEW FONT FAMILY - Change to 'Urbanist' if that's what you want for the body */
+  font-family: 'Urbanist', sans-serif; /* Changed from 'Verdana' to 'Urbanist' */
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+
+code {
+  font-family: 'Roboto', 'Open Sans', sans-serif;
+}
+
+:root {
+  --logo-color: #001b54;
+  --orange-color: #f8931f;
+  --blue-color: #07407b;
+}
